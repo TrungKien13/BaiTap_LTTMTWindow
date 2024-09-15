@@ -20,7 +20,8 @@ namespace BTTuan2
             for (int i = 0; i < soLuongHocSinh; i++)
             {
                 Console.WriteLine($"\nNhập thông tin cho học sinh thứ {i + 1}:");
-                Student hs = new Student();
+                Student student = new Student();
+                Student hs = student;
                 hs.Input(); 
                 danhSachHS.Add(hs);
             }
