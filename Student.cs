@@ -8,9 +8,24 @@ namespace BTTuan2
 {
     internal class Student
     {
-        public int Id { get; set; }
-        public string Name { get; set; } 
-        public int Age { get; set; } 
+        private int id;
+        private string name;
+        private int age;
+
+        public Student()
+        {
+        }
+
+        public Student(int id, string name, int age)
+        {
+            this.id = id;
+            this.name = name;
+            this.age = age;
+        }
+
+        public int Id { get => id; set => id = value; }
+        public string Name { get => name; set => name = value; }
+        public int Age { get => age; set => age = value; }
 
         public void Input()
         {
